@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #2d3950;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.banner {
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    position: relative;
+
+}
+.height{
+    min-height: 90vh;
+    align-items: center;
+}
+
+.banner h1 {
+
+    color: white;
+
+    text-transform: uppercase;
+
+    font-size: 80px;
+}
+
+.banner span {
+
+    display: block;
+
+    height: 2px;
+
+    width: 80%;
+
+    background: #14a4fa;;
+
+    margin: auto;
+
+    margin-bottom: 20px;
+}
+
+.banner p {
+    color: white;
+}
+
+.btn-custom {
+
+    color: white;
+
+    border: 1px solid #14a4fa;
+
+    padding: 0;
+
+    padding: 8px 22px;
+    transition: all 0.5s ease-in-out 0s;
+}
+
+.btn-custom:hover {
+    background-color: #14a4fa;
+    color: white;
+}
+.btn-custom:focus{
+    box-shadow: none;
+}
+
+
+.icon {
+
+position: absolute;
+
+bottom: 100px;
+
+left: 50%;
+
+transform: translateX(-50%);
+
+color: white;
+
+font-size: 20px;
+
+animation: updown 1s linear infinite;
+
+animation-direction: alternate;
+}
+
+@keyframes updown {
+    0% {
+        bottom: 70px;
+    }
+
+    100% {
+        bottom: 40px;
+    }
+}
+.simple_section{
+    background-color: #f6f9f9;
+
+}
+.simple_section h2{
+    color: #2d3950;
+    
+}
+.simple_section p{
+    color: #999999;
+    
+}
+.feature{
+
+}
+.feature_icon{
+    height: 100px;
+    width: 100px;
+       /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#48baff+0,5fc3ff+50,48baff+50,5fc3ff+100 */
+       background: #48baff;
+       /* Old browsers */
+       background: -moz-linear-gradient(left, #48baff 0%, #5fc3ff 50%, #48baff 50%, #5fc3ff 100%);
+       /* FF3.6-15 */
+       background: -webkit-linear-gradient(left, #48baff 0%, #5fc3ff 50%, #48baff 50%, #5fc3ff 100%);
+       /* Chrome10-25,Safari5.1-6 */
+       background: linear-gradient(to right, #48baff 0%, #5fc3ff 50%, #48baff 50%, #5fc3ff 100%);
+       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+       filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#48baff', endColorstr='#5fc3ff', GradientType=1);
+       /* IE6-9 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:40px;
+    margin: auto;
+    margin-bottom: 20px;
+    
+}
+.feature h3{
+    
+}
+.feature p{
+    
+}
+.gallery{
+    background-color: #f6f9f9;
+}
+.gallery_item{
+    position: relative;
+    
+}
+.gallery_item::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: #14a4fa;
+    opacity: 0;
+    transition: .4s all ease-in-out;
+}
+.gallery_item:hover::before{
+    opacity: .5;
+    width: 100%;
+}
+.contact_section{
+    background-image: url(../images/contact_bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+.contact_section::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #2d3950;
+    opacity: .5;
+    z-index: -1;
+}
+.contact_section h2{
+    color: white;
+}
+.contact_section p{
+    color: white;
+
+}
+.contact_section form input{
+    background-color: transparent;
+}
+.contact_section form textarea{
+    background-color: transparent;
+}
+.contact_section form input[type="submit"]{
+    background-color:transparent;
+    color: white;
+    border: 1px solid #14a4fa;
+    padding: 5px 20px;
+    border-radius: 3px;
+}
+.contact_section form input[type="submit"]:hover{
+    background-color:#14a4fa;
+    color: white;
+    transition: all 0.5s ease-in-out 0s;
+
+}
+.contact_section form input:focus{
+    box-shadow: none;
+}
+.footer_part {
+    background-color: #f6f9f9;
+}
+.row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+.footer_content {
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+.footer_content p {
+    margin: 0;
+    color: #999999;
+    font-size: 12px;
+}
+.social_midea ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0;
+}
+.social_midea ul li {
+    margin-left: 8px;
+    border: 1px solid rgb(21 164 250);
+    background-color: rgb(21 164 250);
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 2px;
+}
+.social_midea ul li a {
+    text-decoration: none;
+    color: #ffff;
+}
+.fa-brands, .fab {
+    font-family: "Font Awesome 6 Brands";
+    font-weight: 400;
+}
